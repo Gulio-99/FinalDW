@@ -1,0 +1,90 @@
+---
+title: "Examen Final Data Wrangling"
+author: "Gulio_Valeznuela"
+output: html_notebook
+---
+
+# Final Data Wrangling
+
+### PREGUNTA 1 
+
+
+Una exprecion regular el el conjunto o cadena de caracteres utilizado para identificar patrones dentro de un conjunto de textos, a esto tambien se l epude llamar regiex ques es utilizado en la informatica para identificar estos patrones de cadenas de caracteres o hacer opreaciones de sustitucion.
+
+### PREGUNTA 2
+
+
+Enumere y explique brevemente cuatro aplicaciones prácticas en las cuales
+las expresiones regulares son utilizadas.
+
+1. El reconocmiento de caracteres de texto para poder hacer un respectivo analisis.
+2. Encontrar las variables categoricas o bien nuevas del mismo.
+3. Agrupacion de los textos similares que esten escritos diferente pero tengan el mismo significado. 
+4. Identificar los tipos de caracteres como son letras, numeros, puntuacion entre otros. 
+
+### PREGUNTA 3
+
+1. Cada Variable es una columna: esto referente a tener identificado cada una de las variables categoricas, esto ejemplo es un listado de ventas donde de columnas tendremos cliente, unidad, venta, factura entre otros.
+2. Cada observación forma una fila. Esto hacer referencia al valor describtivo del dato solicitado siguiendo con el ejemplo seria el nombre del cliente y los numero de unidades numero de ventas y a si respectivamente. 
+3. Cada tabla se compone de una unidad observacional las tablas estan en las mismas variables en el sentido de con el mismo ejemplo tener solo characteres de nombre en la columna cliente solo valores numericops en unidades o ventas. 
+
+### PREGUNTA 4
+
+Luego, explique cómo convertirla a formato tidy.
+ Esta no esta en formato tidy devido a que las tres columnas de los años 2008, 2009 y 2010 pertenecen a las misma variable rompiendo la primera ley. 
+  Se usa la funcion melt que lo que hace es pasar la data de manera vertical y asi tendriamos los años, pais y variable en cada columna.
+  
+### PREGUNTA 5
+
+Esta no esta en formato de tidy ya qu en la columna jugador tiene nombre y posicion en el mismo por lo que no es correcto, rompiendo la 3era regla este se arrgla con separando con expreciones regulares teneiendo las variables equipo, jugador y pocicion. 
+
+### PREGUNTA 6
+
+Esta no esta en formato tidy ya que las variables no estan en las columnas igualmente podriamos tener columnas solo con banco, area, y monto donde en area habra rural o urbano y en monto el monto de la cuenta esto utilizando funciones de la libreria tydyr.
+
+### PREGUNTA 7
+
+La funcion de period nos permite analisar vaya el periodo de durason de un tiempo determinado de gran tamaño como es meses o años reconciendo el periodo de duracion de las fechas impuestas como saber que de 2021/10/12 a 2021/11/12 a pasado un mes. En cambio la funcion duration nos permite valores especificos de tiempo como son segundo o minutos en la fechas puesta igualmente funciona con meses. 
+
+### PREGUNTA 8
+
+La funcion period se usaria para calcular el tiempo restante para un evento como es el calculo de lluvias de estrellas, meteoros o ecplises. la funcion duration podria ser para un registro de compra y ventas en la bolsa o criptomonedas donde los segundo son importantes para determinar el precio.
+
+### PREGUNTA 9
+
+el MCAR es cuando una observacion tiene datos faltantes fuera de las otras observaciones donde estos son efectos idependientes y aleatorios realemnte en el momento que estos falten. 
+
+### PREGUNTA 10
+
+Lo recomendado para este tipo de datos es utilizar imputacion por media, moda, mediana devido a su baja significacia y poca probabilidad de sesgo. Es la mas sensilla y permite continuar trabajando sin datos faltantes. 
+
+### PREEGUNTA 11
+
+Con la poca informacion dada del caso usaria pairwise deletion que es el metodo estadistico donde no puede usar los datos con missingdata pero si puede usra variables en la misma observasion que si tengan los datos permitiendo un mejor acercamiento ignorando estos. 
+
+### PREGUNTA 12
+
+Se usaria outliers cap via percentile approach gracias a que nos permite tomar en cuenta con la restriccion del 90% ademas de obiar los datos atipicos y de esta forma unicamente trabajar con la data con mayor significacia respecto a lo que concierne en el problema.
+
+### PREGUNTA 13
+
+Este se utiliza en el contexto de compirmir los datos osea nromalizarlos en el caso de mix-max scailing es de manera de delimitar mediante los limites la data, esto ayuda a dar relevancia a dato sespecificos de manera de tener una mejor observacion del comportamiento de los mismo. Es de recalcar que la data no debe tener mucho ruido pues esto distorcionara la informacion. 
+
+### PREGUNTA 14
+
+Utilizara el Standard Scaler que este lo que hace es restar la media y dividir la desviacion, esto lo que nos permite es nromalizar aquellos datos con altos cambios que sean mu sensiblea a cambios. unicamente es necesario ectrar esa media y la desviacion tipica.m
+
+### PREGUNTA 15
+
+solo se necesitan dos ya que con esots evitamos asi caer en los dummy traps al no caer en la multicolinealidad. 
+### PREGUNTA 16
+
+Es un proceso en dponde las variables categotricas son convertidas en un formato proveido por algoritmos ML para asi tener una mejor prediccion.
+
+### PREGUNTA 17
+
+Es un diagrama de secuencias donde hay n elementos de una secuencia determinada. 
+
+### PREGUNTA 18
+
+SELECT * FROM A LEFT JOIN B ON A.KEY = B.KEY WHERE A!=B
